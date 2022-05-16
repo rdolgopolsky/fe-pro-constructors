@@ -11,6 +11,7 @@ const author1 = new Author("Roman Dolgopolsky");
 const author2 = new Author("Bohdan Onatskyi");
 
 
+
 roman.addToFriends(bohdan);
 roman.addToFriends(valera);
 roman.addToFriends(phill);
