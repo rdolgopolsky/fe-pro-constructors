@@ -38,14 +38,17 @@ setTimeout(function () {
 }, 3000)
 
 
-// setTimeout(function () {
-//   roman.likeBook(book);
-//   roman.likeBook(book2);
-//   roman.likeBook(book3);
-//   valera.removeFriend(roman);
-//   console.log(roman);
-// }, 4000)
+setTimeout(function () {
+  roman.likeBook(book);
+  roman.likeBook(book2);
+  roman.likeBook(book3);
+  valera.addToFriends(roman);
+  // valera.removeFriend(roman);
+  console.log(roman);
+}, 4000)
 
 
-// setTimeout(function () {
-// }, 5000)
+setTimeout(function () {
+  valera.addToFriends(roman);
+  console.log(roman);
+}, 5000)

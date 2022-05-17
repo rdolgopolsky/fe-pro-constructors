@@ -14,7 +14,7 @@ import { User } from './User.js';
  * @property {User} publicationBy
  */
 
-export function Book(title, year, publicationBy, authors) {
+export function Book(title, year, publicationBy, authors = []) {
   this.title = title;
   this.authors = authors;
   this.year = year;

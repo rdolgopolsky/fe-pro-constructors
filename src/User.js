@@ -23,11 +23,13 @@ export function User(name, date = new Date()) {
     let { friends: userFriends } = user;
 
     if (friends.includes(user)) {
-      friends = friends.filter(
+      // Почему-то не видет здесь переменную friends
+      this.friends = this.friends.filter(
         (friend) => friend !== user
       );
 
-      userFriends = userFriends.filter(
+      // Почему-то не видет здесь переменную userFriends
+      user.friends = user.friends.filter(
         (friend) => friend !== this
       );
     }
