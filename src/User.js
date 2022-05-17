@@ -23,12 +23,12 @@ export function User(name, date = new Date()) {
     let { friends: userFriends } = user;
 
     if (friends.includes(user)) {
-      // Почему-то не видет здесь переменную friends
+      // Почему-то не видит здесь переменную friends
       this.friends = this.friends.filter(
         (friend) => friend !== user
       );
 
-      // Почему-то не видет здесь переменную userFriends
+      // Почему-то не видит здесь переменную userFriends
       user.friends = user.friends.filter(
         (friend) => friend !== this
       );
@@ -64,12 +64,12 @@ export function User(name, date = new Date()) {
     let { likedUsers } = book;
 
     if (likes.includes(book)) {
-      // Почему-то не видет здесь переменную likes
+      // Почему-то не видит здесь переменную likes
       this.likes = this.likes.filter(
         (likedBook) => likedBook !== book
       );
 
-      // Почему-то не видет здесь переменную likedUsers
+      // Почему-то не видит здесь переменную likedUsers
       book.likedUsers = book.likedUsers.filter(
         (user) => user !== this
       );
